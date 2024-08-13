@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="body {.css ">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Report Generator</h1>
+        <div class="parallax-bg header-bg"></div>
+    </header>
+    <main class="main">
+        <section class="section form-section">
+            <h2 class="subtitle">Enter the Report</h2>
+            <form id="report-form" novalidate>
+                <label for="report-title" class="label">Report Title:</label>
+                <input type="text" id="report-title" name="report-title" placeholder="Report Title" required>
+                <span class="error-message" id="title-error"></span>
+
+                <label for="report-description" class="label">Report Description:</label>
+                <textarea id="report-description" name="report-description" placeholder="Report Description" required></textarea>
+                <span class="error-message" id="description-error"></span>
+
+                <label for="report-date" class="label">Report Date:</label>
+                <input type="date" id="report-date" name="report-date" placeholder="Report Date" required>
+                <span class="error-message" id="date-error"></span>
+
+                <label for="report-time" class="label">Report Time:</label>
+                <input type="time" id="report-time" name="report-time" placeholder="Report Time" required>
+                <span class="error-message" id="time-error"></span>
+
+                <label for="report-author" class="label">Report Author:</label>
+                <input type="text" id="report-author" name="report-author" placeholder="Report Author" required>
+                <span class="error-message" id="author-error"></span>
+
+                <label for="report-category" class="label">Report Category:</label>
+                <select id="report-category" name="report-category" required>
+                    <option value="">Select a category</option>
+                    <option value="general">General</option>
+                    <option value="finance">Finance</option>
+                    <option value="sales">Sales</option>
+                    <option value="it">IT</option>
+                </select>
+                <span class="error-message" id="category-error"></span>
+
+                <button type="submit" class="button">Generate Report</button>
+            </form>
+        </section>
+        <section class="section report-section">
+            <h2 class="subtitle">Generated Report</h2>
+            <div id="report-content" class="report-content"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Report Generator</p>
+        <div class="parallax-bg footer-bg"></div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="Untitled-3.js"></script>
+</body>
+</html>
